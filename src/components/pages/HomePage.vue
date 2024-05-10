@@ -47,18 +47,18 @@ export default {
 
 <template>
     <div class="container wrapper">
-        <SearchForm />
-        <!-- <div class="d-flex flex-column align-items-center position-relative">
+        <div class="d-flex flex-column align-items-center position-relative">
             <div class="d-flex flex-column align-items-center ricerca">
                 <h1>Benvenuti in BoolBnb</h1>
                 <p>Ricerca un appartamento nei pressi di Roma</p>
+                <SearchForm />
             </div>
             <img class="immagine"
                 src="https://staticgeopop.akamaized.net/wp-content/uploads/sites/32/2022/10/iStock-177303568.jpg?im=AspectCrop=(16,9);"
                 alt="colosseo">
-        </div> -->
+        </div>
 
-        <BaseCarousel :flats="flats" />
+        <!-- <BaseCarousel :flats="flats" /> -->
     </div>
 </template>
 

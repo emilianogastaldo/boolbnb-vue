@@ -18,7 +18,7 @@ export default {
   <div class="main" v-show="!store.isLoading">
     <!-- pagine -->
     <RouterView />
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </div>
 
 </template>
