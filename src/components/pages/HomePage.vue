@@ -2,10 +2,9 @@
 import axios from 'axios';
 import { store } from '../../data/store'
 import SearchForm from '../SearchForm.vue';
-import BaseCarousel from '../BaseCarousel.vue'
 export default {
     name: 'HomePage',
-    components: { BaseCarousel, SearchForm },
+    components: { SearchForm },
     data: () => ({
         flats: [],
         store
@@ -57,8 +56,6 @@ export default {
                 src="https://staticgeopop.akamaized.net/wp-content/uploads/sites/32/2022/10/iStock-177303568.jpg?im=AspectCrop=(16,9);"
                 alt="colosseo">
         </div>
-
-        <!-- <BaseCarousel :flats="flats" /> -->
     </div>
 </template>
 
