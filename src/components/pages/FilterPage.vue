@@ -86,14 +86,14 @@ export default {
             this.distance = '';
         }
     },
-    computed: {
-        sponsoredFlats() {
-            return this.flats.filter(flat => flat.sponsored);
-        },
-        nonSponsoredFlats() {
-            return this.flats.filter(flat => !flat.sponsored);
-        }
-    },
+    // computed: {
+    //     sponsoredFlats() {
+    //         return this.flats.filter(flat => flat.sponsored);
+    //     },
+    //     nonSponsoredFlats() {
+    //         return this.flats.filter(flat => !flat.sponsored);
+    //     }
+    // },
     created() {
         this.fetchFlats(store.address);
     }
@@ -161,18 +161,18 @@ export default {
         </div>
     </div>
     <!-- LISTA SPONSORIZZATI -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="gallery text-center row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 ">
             <div v-for="flat in sponsoredFlats" :key="flat.id" class="col">
                 <BaseCard :flat="flat" :isDetail="false" :isSponsored="true" />
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <AppSidebar :flats="store.flats" :flatServices="store.services" @send-form="" /> -->
     <!-- LISTA NORMALI -->
-    <BaseGallery :flats="nonSponsoredFlats" />
+    <BaseGallery :flats="flats" />
 
-    <div v-if="!nonSponsoredFlats.length" class="container">
+    <div v-if="!flats.length" class="container">
         <div class="alert alert-primary" role="alert">
             <h4>Non ci sono appartamenti che rispecchiano le richieste effettuate</h4>
         </div>

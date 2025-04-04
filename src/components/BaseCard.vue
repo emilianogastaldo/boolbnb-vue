@@ -44,7 +44,7 @@ export default {
                             getFormatedDistance }}</span>
                         </p>
                     </div>
-                    <font-awesome-icon v-if="isSponsored" icon="fa-solid fa-crown" class="premium" />
+                    <font-awesome-icon v-if="flat.sponsored" icon="fa-solid fa-crown" class="premium" />
                 </div>
             </div>
         </RouterLink>
